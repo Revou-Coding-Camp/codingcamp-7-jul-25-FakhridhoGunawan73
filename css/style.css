@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #282c36;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todo-container {
+    background-color: #3a3f4e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba (0, 0, 0.4);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #61dafb;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+#todo-form {
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#task-input,
+#date-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #4a4f5b;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+#task-input::placeholder {
+    color: #bbb;
+}
+
+#add-task-btn {
+    background-color: #61dafb;
+    color: #282c36;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3 ease;
+}
+
+#add-task-btn:hover {
+    background-color: #4dc2ea;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: right;
+    display: none;
+}
+
+.error-message-show {
+    display: block;
+}
